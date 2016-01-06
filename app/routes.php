@@ -15,3 +15,16 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+Route::get('/sayhello/{name?}', function($name = null)
+{
+
+	return "Hey there $name";
+});
+Route::get('/resume',function()
+{
+	return "this is my resume";
+});
+Route::get('/portfolio', function()
+{
+	return 'this is my portfolio';
+});
